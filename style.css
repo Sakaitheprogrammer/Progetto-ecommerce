@@ -7,6 +7,12 @@
   text-align: center;
 }
 
+.logo {
+  height: 300px;
+  margin: 30px;
+  allign: center;
+}
+
 footer{
   background-color: black;
   color: white;
