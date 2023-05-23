@@ -7,6 +7,22 @@
   text-align: center;
 }
 
+nav {background-color: #000000;
+     padding: 18px;
+     width: 70px;
+     display: flex;
+     align-items: left;
+     justify-content: left;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+     transition: width 0.6s linear;
+     overflow-x: hidden;
+     margin: 1%;
+     float: left;
+     position: fixed;
+     margin-top: 2.5%;
+}
+
+
 .logo {
   height: 300px;
   margin: 20px;
