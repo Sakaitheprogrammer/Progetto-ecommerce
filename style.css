@@ -1,94 +1,92 @@
-.imgarticle{
-        height: 100px;
+.sfondo{
+   margin: 0px;
+  background-image: url(https://static.vecteezy.com/ti/vettori-gratis/p3/16829862-vettore-illustrazione-di-graffiti-sfondo-senza-soluzione-di-continuita-graffiti-arte-textures-nel-un-disegnato-a-mano-stile-vecchio-scuola-e-urbano-strada-arte-tema-per-maglietta-disegno-tessile-sfondo-sfondo-e-stampe-vettoriale.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+
+    html,
+    body {
+      position: relative;
+      height: 100%;
     }
-.titolo{
-  font-size:50px;
-  font-family:georgia;
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width:100%;
+      height:100%;
+      object-fit: cover;
+    }
+H1{
+  font-size: 20px;
+  font-family: Helvetica;
   text-align: center;
+  color:white;
+}
+p{
+  font-size: 17px;
+  font-family: Helvetica;
+  text-align: center;
+  color:white;
+}
+.riquadro{
+  border: 1px solid orange; 
+  background-color:black;
+  color:white; 
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 60px;
+  text-align:center;
+  margin-bottom:40px;
+}
+.box{
+  border:1px solid orange; 
+  background-color:black;
+  color:white; 
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 50px;
+  opacity:90%;
+  margin-bottom: 40px;
 }
 
-.barraalto {background-color: hsl(0, 0%, 0%);
-            float: center;
-            width: 100%;
-            position: fixed;
-            height: 130px;
-            z-index: 100;}
-
-nav {background-color: #000000;
-     padding: 18px;
-     width: 70px;
-     display: flex;
-     align-items: left;
-     justify-content: left;
-     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-     transition: width 0.6s linear;
-     overflow-x: hidden;
-     margin: 1%;
-     float: left;
-     position: fixed;
-     margin-top: 2.5%;
-}
-
-nav.active {width: 340px;}
-
-nav ul {display: flex;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        width: 0;
-        transition: width 0.6s linear;}
-
-nav.active ul {width: 90%;}
-
-nav ul li {transform: rotateY(0deg);
-  opacity: 0;
-  transition: transform 0.6s linear, opacity 0.6s linear;
-font-size: 15px;}
-
-nav.active ul li {opacity: 1;
-  transform: rotateY(360deg);}
-
-nav ul a {position: relative;
-  color: #ffffff;
-  text-decoration: none;
-  margin: 0 12px;}
-
-.icon {background-color: #000000;
-  border: 0;
-  cursor: pointer;
-  padding: 0;
-  position: relative;
-  height: 30px;
-  width: 30px;}
-
-.icon:focus {outline: 0;}
-
-.icon .line {background-color: #ffffff;
-  height: 2px;
-  width: 20px;
-  position: absolute;
-  top: 10px;
-  left: 5px;
-  transition: transform 0.6s linear;}
-
-.icon .line2 {top: auto;
-  bottom: 10px;}
-
-nav.active .icon .line1 {transform: rotate(-765deg) translateY(5.5px);}
-
-nav.active .icon .line2 {transform: rotate(765deg) translateY(-5.5px);}
-
-
-.logo {
-  height: 300px;
-}
 
 footer{
   background-color: black;
+  text-align:center;
+  font-size:12px;
   color: white;
-  width: 100%;
-  margin-top: 30px;
-  opacity:80%;
-  text-align: center;
-  font-size: 12px;
+  border-top: 1px solid orange;
+  opacity:90%;
+  }
+riquadri-gialli{
+  border: 3px solid orange
+}
+b{
+  font-style:italic;
 }
