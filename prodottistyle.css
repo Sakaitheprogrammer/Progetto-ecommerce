@@ -5,4 +5,5 @@ footer{
   color: white;
   border-top: 1px solid orange;
   opacity:90%;
+  position-fixed: bottom;
   }
