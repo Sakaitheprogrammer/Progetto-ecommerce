@@ -1,0 +1,70 @@
+footer{
+  background-color: black;
+  text-align:center;
+  font-size:12px;
+  color: white;
+  border-top: 1px solid orange;
+  opacity:90%;
+  position-fixed: bottom;
+  }
+.sfondo{
+   margin: 0px;
+  background-image: url(https://img.freepik.com/free-photo/tools-table_144627-8729.jpg?w=900&t=st=1686902718~exp=1686903318~hmac=5a5d848f7aedb9e31897f064788f9a9f92974cad201d96eb2a2fbb947d93c204);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica;
+      font-size: 14px;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+h1 {
+  font-size: 20px;
+  font-family: Helvetica;
+  text-align: center;
+  color: white;
+}
+
+p {
+  font-size: 17px;
+  font-family: Helvetica;
+  text-align: center;
+  color: white;
+}
+
+.riquadro {
+  border: 1px solid orange;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container {
+  max-width: 600px;
+  margin-top: 60px;
+}
+
+.riquadri-gialli {
+  border: 3px solid orange;
+}
+
+b {
+  font-style: italic;
+}
