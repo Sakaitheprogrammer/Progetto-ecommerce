@@ -43,96 +43,61 @@
 </nav>                           
                   </header>
               <body class="sfondo">
-
-
-  <div class="container mt-5 riquadro">
-    <div class="row">
-      <div class="col-sm-0">
-        <div class="container">
-          <main class="container my-5">
+  <main class="container my-5">
             <h1 class="mb-4">Carrello</h1>
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Prodotto</th>
-                  <th scope="col">Prezzo</th>
-                  <th scope="col">Quantità</th>
-                  <th scope="col">Totale</th>
-                  <th scope="col"></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Nome prodotto 1</td>
-                  <td>€XX,XX</td>
-                  <td>
-                    <input type="number" class="form-control" min="1" value="1" />
-                  </td>
-                  <td>€XX,XX</td>
-                  <td>
-                    <button class="btn btn-danger btn-sm">
-                      <i class="bi bi-trash"></i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Nome prodotto 2</td>
-                  <td>€XX,XX</td>
-                  <td>
-                    <input type="number" class="form-control" min="1" value="1" />
-                  </td>
-                  <td>€XX,XX</td>
-                  <td>
-                    <button class="btn btn-danger btn-sm">
-                      <i class="bi bi-trash"></i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Nome prodotto 3</td>
-                  <td>€XX,XX</td>
-                  <td>
-                    <input type="number" class="form-control" min="1" value="1" />
-                  </td>
-                  <td>€XX,XX</td>
-                  <td>
-                    <button class="btn btn-danger btn-sm">
-                      <i class="bi bi-trash"></i>
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="row justify-content-end">
-              <div class="col-lg-4">
-                <table class="table">
-                  <tbody>
-                    <tr>
-                      <th scope="row">Totale prodotti:</th>
-                      <td>€XX,XX</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Costi di spedizione:</th>
-                      <td>€XX,XX</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Totale:</th>
-                      <td>€XX,XX</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <a href="#" class="btn btn-primary w-100">Procedi al pagamento</a>
-              </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div id="imgcarrello" class="col-md-2">
+                                    <img src="immagini/shounen/cm12.jpg" alt="Prodotto" class="img-fluid">
+                                </div>
+                                <div class="col-md-3">
+                                    <h5 class="card-title nome">Chainsaw man 12</h5>
+                                    <p class="card-text">Descrizione del prodotto</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="card-text price">Prezzo: €5,00</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="number" class="form-control quantity" min="1" value="1" onchange="calculateTotal()">
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="card-text">Totale: €5,00</p>
+                                </div>
+                                <div class="col-md-1">
+                                    <i class="material-icons" onclick="removeProduct(event)" id="delete-icon">delete</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </main>
-        </div>
-      </div>
-    </div>
-  </div>
+            <div class="row justify-content-end mt-3">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Riepilogo</h5>
+                            <div class="mb-3">
+                                <div class="fw-bold">Totale prodotti:</div>
+                                <p id="subtotal" class="card-text">€5,00</p>
+                            </div>
+                           <div class="mb-3">
+                                <div class="fw-bold">Costi di spedizione:</div>
+                                <p id="shippingCost" class="card-text">€2,00</p>
+                            </div>
+                            <div class="mb-3">
+                                <div class="fw-bold">Totale:</div>
+                                <p id="totalAmount" class="card-text">€5,00</p>
+                            </div>
+                            <a href="#" class="btn btn-danger w-100">Procedi al pagamento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
                   
 </body>     
                   
