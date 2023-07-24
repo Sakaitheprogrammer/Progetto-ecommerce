@@ -14,11 +14,8 @@ toggles.forEach((toggle) => {
 });
 
 function Aggiungialcarrello(o) {
-      var quantita = document.getElementById("quantita").value;
-      var carrello = document.getElementById("carrello").innerHTML;
-      var totale = parseInt(carrello) + parseInt(quantita);
-      document.getElementById("carrello").innerHTML = totale;
-    }
-  </script>
-  <!-- Collegamento ai file JavaScript di Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+  var quantita = document.getElementById("quantita").value;
+  var carrello = document.getElementById("carrello").innerHTML;
+  var totale = parseInt(carrello) + parseInt(quantita);
+  document.getElementById("carrello").innerHTML = totale;
+}
